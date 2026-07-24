@@ -1,5 +1,18 @@
 import { defineConfig } from 'vite'
+import { resolve } from 'path'
 
 export default defineConfig({
-  base: 'https://github.com/brownspiderman/my-website', // Replace 'my-website' with your exact GitHub repository name
+  base: '/my-website/',
+
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        about: resolve(__dirname, 'about.html'),
+        contact: resolve(__dirname, 'contact.html'),
+        learn: resolve(__dirname, 'learn.html'),
+        listen: resolve(__dirname, 'listen.html'),
+      },
+    },
+  },
 })

@@ -1,0 +1,518 @@
+/* =======================================
+   HIMI WEBSITE
+   Version 1.0
+======================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body {
+
+    font-family:Helvetica, Arial, sans-serif;
+    background:#fff;
+    color:#111;
+    line-height:1.6;
+
+}
+
+/* =======================================
+   GLOBAL
+======================================= */
+
+main{
+
+    width:980px;
+    margin:0 auto;
+
+}
+
+section{
+
+    margin-bottom:140px;
+
+}
+
+img{
+
+    display:block;
+
+}
+
+iframe{
+
+    border:none;
+
+}
+
+a{
+
+    color:#111;
+    text-decoration:none;
+
+}
+
+a:hover{
+
+    opacity:.65;
+
+}
+
+/* =======================================
+   NAVIGATION
+======================================= */
+
+header{
+
+    width:980px;
+    margin:50px auto;
+
+}
+
+nav{
+
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-bottom:40px;
+
+}
+
+nav a{
+
+    color:#2368ff;
+    font-size:16px;
+    font-weight:600;
+
+}
+
+/* =======================================
+   HOME
+======================================= */
+
+.home{
+
+    text-align:center;
+
+}
+
+.logo{
+
+    width:480px;
+    margin:40px auto;
+    margin-left:220px;
+
+}
+
+.hero-image{
+
+    display:block;
+    width:350px;
+    justify-content:center;
+    margin:0 auto 50px;
+
+}
+
+.nav{
+
+    display:flex;
+    justify-content:center;
+    gap:55px;
+    margin:35px 0 60px;
+
+
+}
+
+.nav a{
+
+    color:#2368ff;
+    font-size:17px;
+    font-weight:600;
+    letter-spacing:.04rem; 
+    
+}
+
+
+.video{
+
+    width:750px;
+    margin:0 auto;
+
+}
+
+.video iframe{
+
+    width:750px;
+    height:506px;
+    display:block;
+    
+
+}
+
+.caption{
+
+    margin-top:35px;
+    text-align:center;
+    font-size:18px;
+
+}
+
+.quote{
+    
+    margin-top:20px;
+    width:650px;
+    margin:65px auto;
+    text-align: justify;
+    line-height:1.8;
+
+}
+
+.quote p{
+
+    margin-bottom:24px;
+
+}
+
+.button{
+
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:40px;
+
+    width:180px;
+    height:60px;
+
+    background:#111;
+    color:#fff;
+
+    font-weight:600;
+
+}
+
+/* =======================================
+   ABOUT
+======================================= */
+
+.about{
+
+display:grid;
+grid-template-columns:631px 513px;
+grid-template-rows:auto auto;
+
+column-gap:45px;
+row-gap:20px;
+
+align-items:start;
+
+}
+
+
+.about-image{
+
+    padding-top: 20px;
+    width:631px;
+    height:425px;
+    object-fit:cover;
+
+}
+
+.about-video{
+
+    margin-top:20px;
+    aspect-ratio:631/425;
+
+}
+
+.about-video iframe{
+
+    width:631px;
+    height:425px;
+
+}
+
+.about-text{
+
+padding-top: 20px;
+padding-right:40px;
+grid-column:2;
+grid-row:1 / span 2;
+
+text-align:justify;
+line-height:1.8;
+margin-right:20px;
+
+}
+
+.about-text p{
+
+    margin-bottom:28px;
+
+}
+
+/* =======================================
+   LEARN
+======================================= */
+
+.learn{
+
+    text-align:center;
+
+}
+
+.learn h1{
+
+    font-size:58px;
+    margin-bottom:70px;
+    justify-content:center;
+    margin:0 auto 70px;
+
+
+}
+
+.learn a{
+
+    color:#2368ff;
+    font-weight:600;
+
+}
+
+.learn a:hover{
+
+text-decoration:underline;
+
+}
+
+.player{
+
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+
+gap:30px;
+
+margin-bottom:80px;
+
+}
+
+.player iframe{
+
+width:700px;
+height:500px;
+
+margin:0;
+
+}
+
+.article{
+
+    width:660px;
+    margin:0 auto;
+    text-align:left;
+
+}
+
+.article h2{
+
+    margin:50px 0 15px;
+
+}
+
+.article p{
+
+    margin-bottom:25px;
+    text-align:justify;
+    line-height:1.8;
+
+}
+
+.article ol{
+
+    margin-left:25px;
+    margin-bottom:30px;
+
+}
+
+blockquote{
+
+    width:620px;
+    margin:70px auto;
+
+    font-size:28px;
+    text-align:center;
+    font-weight:500;
+
+}
+
+/* =======================================
+   LISTEN
+======================================= */
+
+/* LISTEN */
+
+.albums{
+
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:90px;
+    max-width:980px;
+    margin:0 auto;
+
+}
+
+.album{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+}
+
+.album img{
+
+    width:100%;
+    max-width:420px;
+    aspect-ratio:1/1;
+    object-fit:cover;
+
+}
+
+.bandcamp-player{
+
+    width:100%;
+    max-width:420px;
+    height:120px;
+
+    margin-top:20px;
+
+    border:none;
+
+}
+
+.archive{
+
+    margin-top:120px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+}
+
+/* =======================================
+   CONTACT
+======================================= */
+.contact-intro{
+
+    text-align:center;
+    font-size:.85rem;
+    color:#666;
+    margin-bottom:80px;
+
+}
+
+
+.contact{
+
+    display:grid;
+    grid-template-columns:350px 431px;
+    justify-content:space-between;
+    align-items:start;
+    margin-right:60px;
+
+}
+
+.contact a{
+
+    color:#2368ff;
+    text-decoration:underline;
+
+
+}
+
+.contact-info{
+
+    padding-top:15px;
+
+}
+
+.contact-info p{
+
+    margin-bottom:15px;
+
+}
+
+form{
+    margin-top:100px;
+    width:431px;
+
+}
+
+label{
+
+    display:block;
+    margin-bottom:8px;
+
+}
+
+input{
+
+    width:431px;
+    height:55px;
+    margin-bottom:20px;
+    padding:15px;
+    font:inherit;
+
+}
+
+textarea{
+
+    width:431px;
+    height:180px;
+    padding:15px;
+
+    margin-bottom:25px;
+
+    resize:none;
+
+    font:inherit;
+
+}
+
+button{
+
+    width:431px;
+    height:85px;
+
+    background:#111;
+    color:#fff;
+
+    border:none;
+
+    font-size:24px;
+    cursor:pointer;
+
+}
+
+/* =======================================
+   FOOTER
+======================================= */
+
+footer{
+
+    width:980px;
+    margin:120px auto 60px;
+    text-align:center;
+    color:#777;
+    font-size:15px;
+    
+}
