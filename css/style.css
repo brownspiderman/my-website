@@ -217,6 +217,7 @@ align-items:start;
 
 .about-image{
 
+    padding-top: 20px;
     width:631px;
     height:425px;
     object-fit:cover;
@@ -239,6 +240,8 @@ align-items:start;
 
 .about-text{
 
+padding-top: 20px;
+padding-right:40px;
 grid-column:2;
 grid-row:1 / span 2;
 
