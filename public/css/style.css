@@ -159,9 +159,10 @@ nav a{
 
 .caption{
 
-    margin-top:35px;
+    margin-top:5px;
     text-align:center;
-    font-size:18px;
+    font-size:16px;
+    font-style: italic;
 
 }
 
@@ -172,6 +173,7 @@ nav a{
     margin:65px auto;
     text-align: justify;
     line-height:1.8;
+    font-size: medium;
 
 }
 
@@ -186,7 +188,7 @@ nav a{
     display:inline-flex;
     justify-content:center;
     align-items:center;
-    margin-top:40px;
+    margin-top:20px;
 
     width:180px;
     height:60px;
@@ -227,7 +229,7 @@ align-items:start;
 
 .about-video{
 
-    margin-top:20px;
+    margin-top:10px;
     aspect-ratio:631/425;
 
 }
@@ -248,7 +250,7 @@ grid-row:1 / span 2;
 
 text-align:justify;
 line-height:1.8;
-margin-right:20px;
+margin-right:40px;
 
 }
 
@@ -428,6 +430,7 @@ blockquote{
     justify-content:space-between;
     align-items:start;
     margin-right:60px;
+    margin-top:60px;
 
 }
 
