@@ -166,7 +166,8 @@ nav a{
 }
 
 .quote{
-
+    
+    margin-top:20px;
     width:650px;
     margin:65px auto;
     text-align: justify;
